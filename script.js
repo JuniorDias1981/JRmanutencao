@@ -1,9 +1,9 @@
-const menuToggle = document.getElementById('menu-toggle');
-const navbar = document.querySelector('.navbar ul');
 
-menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    const nav = document.querySelector(".navbar");
+    nav.classList.toggle("active");
 });
+
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
